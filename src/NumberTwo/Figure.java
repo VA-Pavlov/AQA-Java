@@ -1,9 +1,11 @@
 package NumberTwo;
 
-public class Figure implements Rectangle{
+public class Figure implements Circle,Triangle,Rectangle{
+     String backColor;
+     String borderColor;
 
-    double perimetr;
-    public Figure(int a,int b){
-        perimetr = this.Perimetr(a,b);
-    }
+     public Figure(String backColor,  String borderColor){
+         this.backColor = backColor;
+         this.borderColor = borderColor;
+     }
 }
